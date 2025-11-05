@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Project Document - English Explorers" data-es="Documento del Proyecto - Exploradores de Inglés">Project Document - English Explorers</title>
+  <link rel="stylesheet" href="pg1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 data-en="PROJECT DOCUMENT" data-es="DOCUMENTO DEL PROYECTO">PROJECT DOCUMENT</h1>
+      <div class="logo">
+        <img src="./img/logo.png" alt="English Explorers Logo" data-en-alt="English Explorers Logo" data-es-alt="Logo Exploradores de Inglés">
+      </div>
+    </div>
+    <nav>
+      <button onclick="window.location.href='index.html'" data-en="Home" data-es="Inicio">Home</button>
+      <button onclick="scrollToSection('profiles')" data-en="Profiles" data-es="Perfiles">Profiles</button>
+      <button onclick="scrollToSection('pdf')" data-en="Document PDF" data-es="Documento PDF">Document PDF</button>
+      <button onclick="scrollToSection('footer')" data-en="Contact" data-es="Contacto">Contact</button>
+      <div class="language-selector">
+        <button class="lang-btn"><span id="current-lang-text">Español</span> ▾</button>
+        <ul class="lang-menu">
+          <li><a href="#" onclick="cambiarIdioma('en')">English</a></li>
+          <li><a href="#" onclick="cambiarIdioma('es')">Español</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <h2 data-en="PROJECT OVERVIEW" data-es="VISIÓN GENERAL DEL PROYECTO">PROJECT OVERVIEW</h2>
+    <p data-en="The 'English Explorers' project aims to address the decline in English proficiency among students transitioning from primary to high school. Through a dynamic mobile application, we provide gamified lessons and personalized learning to boost vocabulary and engagement."
+       data-es="El proyecto 'Exploradores de Inglés' busca abordar la disminución en el dominio del inglés de los estudiantes que pasan de primaria a bachillerato. A través de una aplicación móvil dinámica, ofrecemos lecciones gamificadas y aprendizaje personalizado para mejorar el vocabulario y el compromiso.">The 'English Explorers' project aims to address the decline in English proficiency among students transitioning from primary to high school. Through a dynamic mobile application, we provide gamified lessons and personalized learning to boost vocabulary and engagement.</p>
+  </section>
+
+  <section id="profiles" class="profiles">
+    <h2 data-en="PROFILES" data-es="PERFILES">PROFILES</h2>
+    <div class="profiles-container">
+      <div class="profile" id="profile1">
+        <div class="profile-header">
+          <div class="profile-img-wrapper">
+            <img src="./img/charon.jpg" alt="Charon Dayana Guzman Robles" data-en-alt="Charon Dayana Guzman Robles" data-es-alt="Charon Dayana Guzman Robles">
+          </div>
+          <h3 data-en="Charon Dayana Guzman Robles" data-es="Charon Dayana Guzman Robles">Charon Dayana Guzman Robles</h3>
+        </div>
+        <div class="profile-content" id="profile1-content">
+          <p data-en="I'm Charon Guzmán, a student passionate about helping children learn English through innovative and engaging methods. My goal is to create a fun and supportive environment for children to improve their language skills."
+             data-es="Soy Charón Guzmán, una estudiante apasionada por ayudar a los niños a aprender inglés mediante métodos innovadores y atractivos. Mi objetivo es crear un entorno divertido y de apoyo para que los niños mejoren sus habilidades lingüísticas.">
+            I'm Charon Guzmán, a student passionate about helping children learn English through innovative and engaging methods. My goal is to create a fun and supportive environment for children to improve their language skills.
+          </p>
+        </div>
+      </div>
+      <div class="profile" id="profile2">
+        <div class="profile-header">
+          <div class="profile-img-wrapper">
+            <img src="./img/braye.jpg" alt="Brayerlis Soeth Sarmiento Tapia" data-en-alt="Brayerlis Soeth Sarmiento Tapia" data-es-alt="Brayerlis Soeth Sarmiento Tapia">
+          </div>
+          <h3 data-en="Brayerlis Soeth Sarmiento Tapia" data-es="Brayerlis Soeth Sarmiento Tapia">Brayerlis Soeth Sarmiento Tapia</h3>
+        </div>
+        <div class="profile-content" id="profile2-content">
+          <p data-en="I'm Brayerlis Sarmiento, a student dedicated to designing interactive learning experiences that inspire children to explore and enjoy the process of learning English."
+             data-es="Soy Brayerlis Sarmiento, una estudiante dedicada a diseñar experiencias de aprendizaje interactivas que inspiren a los niños a explorar y disfrutar el proceso de aprender inglés.">
+            I'm Brayerlis Sarmiento, a student dedicated to designing interactive learning experiences that inspire children to explore and enjoy the process of learning English.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pdf" class="pdf">
+    <h2 data-en="PROJECT DOCUMENT PDF" data-es="DOCUMENTO PDF DEL PROYECTO">PROJECT DOCUMENT PDF</h2>
+    <div class="pdf-container">
+      <iframe src="./docs/project_document.pdf" title="Project Document PDF" data-en-title="Project Document PDF" data-es-title="Documento PDF del Proyecto" width="800" height="600"></iframe>
+      <a href="./docs/project_document.pdf" download class="download-btn" data-en="Download PDF" data-es="Descargar PDF">Download PDF</a>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/englishexplorers1103" data-en="Follow us on Facebook" data-es="Síguenos en Facebook">Follow us on Facebook</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:englishexplorers1103@gmail.com" data-en="englishexplorers1103@gmail.com" data-es="englishexplorers1103@gmail.com">englishexplorers1103@gmail.com</a></p>
+    <p><i class="fas fa-home"></i> <a href="index.html" data-en="Back to Main" data-es="Volver a Principal">Back to Main</a></p>
+    <p data-en="Project created by Charon Dayana Guzman Robles and Brayerlis Soeth Sarmiento Tapia 1103 JT" 
+       data-es="Proyecto creado por Charon Dayana Guzman Robles y Brayerlis Soeth Sarmiento Tapia 1103 JT">
+       Project created by Charon Dayana Guzman Robles and Brayerlis Soeth Sarmiento Tapia 1103 JT
+    </p>
+  </footer>
+
+  <script>
+    let currentLanguage = 'en';
+    let activeProfile = null;
+
+    function cambiarIdioma(idioma) {
+      currentLanguage = idioma;
+      document.documentElement.lang = idioma;
+      const elementosConDatos = document.querySelectorAll('[data-en]');
+      const currentLangText = document.getElementById('current-lang-text');
+      elementosConDatos.forEach(elemento => {
+        const traduccion = elemento.getAttribute(`data-${idioma}`);
+        if (traduccion) {
+          elemento.textContent = traduccion;
+        }
+        if (elemento.tagName === 'IMG' || elemento.tagName === 'IFRAME') {
+          const altTraduccion = elemento.getAttribute(`data-${idioma}-alt`) || elemento.getAttribute(`data-${idioma}-title`);
+          if (altTraduccion) {
+            elemento.setAttribute(elemento.tagName === 'IMG' ? 'alt' : 'title', altTraduccion);
+          }
+        }
+      });
+      currentLangText.textContent = idioma === 'en' ? 'Español' : 'English';
+      if (activeProfile) {
+        updateProfileContent(activeProfile);
+      }
+    }
+
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleProfile(profileId) {
+      const profile = document.getElementById(profileId);
+      const content = profile.querySelector('.profile-content');
+      document.querySelectorAll('.profile-content').forEach(c => {
+        if (c !== content) c.classList.remove('active');
+      });
+      content.classList.toggle('active');
+      activeProfile = content.classList.contains('active') ? profileId : null;
+      updateProfileContent(profileId);
+    }
+
+    function updateProfileContent(profileId) {
+      const content = document.getElementById(`${profileId}-content`).querySelector('p');
+      content.textContent = content.getAttribute(`data-${currentLanguage}`);
+    }
+
+    document.querySelectorAll('.profile').forEach(profile => {
+      profile.addEventListener('click', () => {
+        const profileId = profile.id;
+        toggleProfile(profileId);
+      });
+    });
+  </script>
+</body>
+</html>

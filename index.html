@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="English Explorers" data-es="Exploradores de Inglés">English Explorers</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 data-en="ENGLISH EXPLORERS" data-es="EXPLORADORES DE INGLÉS">ENGLISH EXPLORERS</h1>
+      <div class="logo">
+        <img src="logo.png" alt="English Explorers Logo" data-en-alt="English Explorers Logo" data-es-alt="Logo Exploradores de Inglés">
+      </div>
+    </div>
+    <nav>
+      <button onclick="scrollToSection('who-we-are')" data-en="Who We Are" data-es="Quiénes Somos">Who We Are</button>
+      <button onclick="scrollToSection('st')" data-en="Technological Solution" data-es="Solución Tecnológica">Technological Solution</button>
+      <button onclick="scrollToSection('evidence')" data-en="Evidence" data-es="Evidencias">Evidence</button>
+      <button onclick="scrollToSection('profiles')" data-en="Profiles" data-es="Perfiles">Profiles</button>
+      <button onclick="scrollToSection('footer')" data-en="Contact" data-es="Contacto">Contact</button>
+      <div class="language-selector">
+        <button class="lang-btn"><span id="current-lang-text">Español</span> ▾</button>
+        <ul class="lang-menu">
+          <li><a href="#" onclick="cambiarIdioma('en')">English</a></li>
+          <li><a href="#" onclick="cambiarIdioma('es')">Español</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="problem" class="problem">
+    <h2>PROBLEM QUESTION</h2>
+    <p
+      data-en="As students move from primary to high school, their English skills often decline due to complex curricula and a lack of engaging practice opportunities. We aim to develop an interactive solution that keeps students motivated and strengthens their vocabulary for academic success."
+      data-es="Al pasar de primaria a bachillerato, los estudiantes suelen perder competencia en inglés debido a currículos complejos y la falta de oportunidades de práctica atractivas. Buscamos desarrollar una solución interactiva que mantenga a los estudiantes motivados y fortalezca su vocabulario para el éxito académico.">
+      As students move from primary to high school, their English skills often decline...
+    </p>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="who-we-are" class="galeria">
+    <h2 data-en="WHO WE ARE" data-es="QUIÉNES SOMOS">WHO WE ARE</h2>
+    <div class="botones">
+      <button class="img-btn" onclick="mostrarimagen(1)" data-en="Mission" data-es="Misión">Mission</button>
+      <button class="img-btn" onclick="mostrarimagen(2)" data-en="Vision" data-es="Visión">Vision</button>
+      <button class="img-btn" onclick="mostrarimagen(3)" data-en="General Obj." data-es="Obj. General">General Obj.</button>
+      <button class="img-btn" onclick="mostrarimagen(4)" data-en="Specific Obj." data-es="Obj. Específico">Specific Obj.</button>
+    </div>
+    <div class="imagenes">
+      <!-- si las tienes en /img cambia a src="img/Mision.jpg" -->
+      <img id="img1" src="Mision.jpg" alt="Mission" data-en-alt="Mission" data-es-alt="Misión" style="display:none;">
+      <img id="img2" src="Vission.jpg" alt="Vision" data-en-alt="Vision" data-es-alt="Visión" style="display:none;">
+      <img id="img3" src="General (2).jpg" alt="General Obj." data-en-alt="General Obj." data-es-alt="Obj. General" style="display:none;">
+      <img id="img4" src="Specific (1).jpg" alt="Specific Obj." data-en-alt="Specific Obj." data-es-alt="Obj. Específico" style="display:none;">
+    </div>
+  </section>
+
+  <!-- SOLUCIÓN TECNOLÓGICA -->
+  <section id="st" class="st">
+    <h2 data-en="TECHNOLOGICAL SOLUTION" data-es="SOLUCIÓN TECNOLÓGICA">TECHNOLOGICAL SOLUTION</h2>
+    <div class="st-content">
+      <div class="st-text">
+        <p data-en="Our solution is a dynamic mobile app crafted to boost English vocabulary for students entering high school. With gamified lessons, interactive quizzes, and real-world scenarios, it creates an engaging learning experience that sparks curiosity."
+           data-es="Nuestra solución es una aplicación móvil dinámica diseñada para mejorar el vocabulario en inglés de estudiantes que ingresan a bachillerato. Con lecciones gamificadas, cuestionarios interactivos y escenarios del mundo real, crea una experiencia de aprendizaje atractiva que despierta la curiosidad.">Our solution is a dynamic mobile app crafted to boost English vocabulary for students entering high school. With gamified lessons, interactive quizzes, and real-world scenarios, it creates an engaging learning experience that sparks curiosity.</p>
+        <p data-en="Using adaptive technology, the app personalizes content to match each student’s skill level, ensuring steady progress and sustained motivation."
+           data-es="Utilizando tecnología adaptativa, la aplicación personaliza el contenido según el nivel de habilidad de cada estudiante, asegurando un progreso constante y una motivación sostenida.">Using adaptive technology, the app personalizes content to match each student’s skill level, ensuring steady progress and sustained motivation.</p>
+      </div>
+      <img src="WhatsApp Image 2025-10-27 at 11.36.21 AM.jpeg" alt="Technological Solution" data-en-alt="Technological Solution" data-es-alt="Solución Tecnológica">
+    </div>
+  </section>
+
+  <!-- EVIDENCIAS -->
+  <section id="evidence" class="evidence">
+    <h2 data-en="EVIDENCE" data-es="EVIDENCIAS">EVIDENCE</h2>
+    <div class="evidencias-container">
+      <div class="evidencias">
+        <div class="evidencia-item">
+          <img src="evidencia (1).jpeg" alt="Evidence 1" data-en-alt="Evidence 1" data-es-alt="Evidencia 1">
+          <div class="evidencia-desc" data-en="Initial activity with students." data-es="Actividad inicial con estudiantes."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (2).jpeg" alt="Evidence 2" data-en-alt="Evidence 2" data-es-alt="Evidencia 2">
+          <div class="evidencia-desc" data-en="Vocabulary game." data-es="Juego de vocabulario."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (3).jpeg" alt="Evidence 3" data-en-alt="Evidence 3" data-es-alt="Evidencia 3">
+          <div class="evidencia-desc" data-en="Project presentation." data-es="Presentación de proyecto."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (4).jpeg" alt="Evidence 4" data-en-alt="Evidence 4" data-es-alt="Evidencia 4">
+          <div class="evidencia-desc" data-en="Interactive workshop." data-es="Taller interactivo."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (5).jpeg" alt="Evidence 5" data-en-alt="Evidence 5" data-es-alt="Evidencia 5">
+          <div class="evidencia-desc" data-en="Group activity." data-es="Actividad en grupo."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (6).jpeg" alt="Evidence 6" data-en-alt="Evidence 6" data-es-alt="Evidencia 6">
+          <div class="evidencia-desc" data-en="Vocabulary practice." data-es="Práctica de vocabulario."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (7).jpeg" alt="Evidence 7" data-en-alt="Evidence 7" data-es-alt="Evidencia 7">
+          <div class="evidencia-desc" data-en="Classroom dynamics." data-es="Dinámicas de clase."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="./img/evidencia (8).jpeg" alt="Evidence 8" data-en-alt="Evidence 8" data-es-alt="Evidencia 8">
+          <div class="evidencia-desc" data-en="Learning session." data-es="Sesión de aprendizaje."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (12).jpeg" alt="Evidence 9" data-en-alt="Evidence 9" data-es-alt="Evidencia 9">
+          <div class="evidencia-desc" data-en="Interactive game." data-es="Juego interactivo."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (9).jpeg" alt="Evidence 10" data-en-alt="Evidence 10" data-es-alt="Evidencia 10">
+          <div class="evidencia-desc" data-en="Student engagement." data-es="Compromiso estudiantil."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (10).jpeg" alt="Evidence 11" data-en-alt="Evidence 11" data-es-alt="Evidencia 11">
+          <div class="evidencia-desc" data-en="Teamwork activity." data-es="Actividad en equipo."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (11).jpeg" alt="Evidence 12" data-en-alt="Evidence 12" data-es-alt="Evidencia 12">
+          <div class="evidencia-desc" data-en="Vocabulary review." data-es="Revisión de vocabulario."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (13).jpeg" alt="Evidence 13" data-en-alt="Evidence 13" data-es-alt="Evidencia 13">
+          <div class="evidencia-desc" data-en="Presentation skills." data-es="Habilidades de presentación."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (14).jpeg" alt="Evidence 14" data-en-alt="Evidence 14" data-es-alt="Evidencia 14">
+          <div class="evidencia-desc" data-en="Learning outcomes." data-es="Resultados de aprendizaje."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (15).jpeg" alt="Evidence 15" data-en-alt="Evidence 15" data-es-alt="Evidencia 15">
+          <div class="evidencia-desc" data-en="Class participation." data-es="Participación en clase."></div>
+        </div>
+        <div class="evidencia-item">
+          <img src="evidencia (16).jpeg" alt="Evidence 16" data-en-alt="Evidence 16" data-es-alt="Evidencia 16">
+          <div class="evidencia-desc" data-en="Final project showcase." data-es="Exhibición del proyecto final."></div>
+        </div>
+      </div>
+      <div class="evidencia-desc-box"></div>
+    </div>
+  </section>
+
+  <!-- PERFILES -->
+  <section id="profiles" class="profiles">
+    <h2 data-en="PROFILES" data-es="PERFILES">PROFILES</h2>
+    <div class="profiles-container">
+      <div class="profile" id="profile1">
+        <div class="profile-header">
+          <div class="profile-img-wrapper">
+            <img src="charon.jpg" alt="Charon Dayana Guzman Robles" data-en-alt="Charon Dayana Guzman Robles" data-es-alt="Charon Dayana Guzman Robles">
+          </div>
+          <h3 data-en="Charon Dayana Guzman Robles" data-es="Charon Dayana Guzman Robles">Charon Dayana Guzman Robles</h3>
+        </div>
+        <div class="profile-content" id="profile1-content">
+          <p data-en="I'm Charon Guzmán, a student passionate about helping children learn English through innovative and engaging methods. My goal is to create a fun and supportive environment for children to improve their language skills."
+             data-es="Soy Charón Guzmán, una estudiante apasionada por ayudar a los niños a aprender inglés mediante métodos innovadores y atractivos. Mi objetivo es crear un entorno divertido y de apoyo para que los niños mejoren sus habilidades lingüísticas.">
+            I'm Charon Guzmán, a student passionate about helping children learn English through innovative and engaging methods. My goal is to create a fun and supportive environment for children to improve their language skills.
+          </p>
+        </div>
+      </div>
+      <div class="profile" id="profile2">
+        <div class="profile-header">
+          <div class="profile-img-wrapper">
+            <img src="braye.jpg" alt="Brayerlis Soeth Sarmiento Tapia" data-en-alt="Brayerlis Soeth Sarmiento Tapia" data-es-alt="Brayerlis Soeth Sarmiento Tapia">
+          </div>
+          <h3 data-en="Brayerlis Soeth Sarmiento Tapia" data-es="Brayerlis Soeth Sarmiento Tapia">Brayerlis Soeth Sarmiento Tapia</h3>
+        </div>
+        <div class="profile-content" id="profile2-content">
+          <p data-en="I'm Brayerlis Sarmiento, a student dedicated to designing interactive learning experiences that inspire children to explore and enjoy the process of learning English."
+             data-es="Soy Brayerlis Sarmiento, una estudiante dedicada a diseñar experiencias de aprendizaje interactivas que inspiren a los niños a explorar y disfrutar el proceso de aprender inglés.">
+            I'm Brayerlis Sarmiento, a student dedicated to designing interactive learning experiences that inspire children to explore and enjoy the process of learning English.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/englishexplorers1103" data-en="Follow us on Facebook" data-es="Síguenos en Facebook">Follow us on Facebook</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:englishexplorers1103@gmail.com">englishexplorers1103@gmail.com</a></p>
+    <p><i class="fas fa-file-alt"></i> <a href="pg1.html" data-en="Document" data-es="Documento">Document</a></p>
+    <p data-en="Project created by..." data-es="Proyecto creado por...">
+      Project created by Charon Dayana Guzman Robles and Brayerlis Soeth Sarmiento Tapia 1103 JT
+    </p>
+  </footer>
+
+  <script>
+    // ponemos todo en el global para que los onclick del HTML lo vean
+    let currentLanguage = 'en';
+    let activeProfile = null;
+    let slideIndex = 0;
+    const slideDuration = 4000;
+
+    function cambiarIdioma(idioma) {
+      currentLanguage = idioma;
+      document.documentElement.lang = idioma;
+      const elementosConDatos = document.querySelectorAll('[data-en]');
+      const currentLangText = document.getElementById('current-lang-text');
+
+      elementosConDatos.forEach(elemento => {
+        const traduccion = elemento.getAttribute(`data-${idioma}`);
+        if (traduccion && elemento.tagName !== 'IMG') {
+          elemento.textContent = traduccion;
+        }
+        if (elemento.tagName === 'IMG') {
+          const altTraduccion = elemento.getAttribute(`data-${idioma}-alt`);
+          if (altTraduccion) {
+            elemento.setAttribute('alt', altTraduccion);
+          }
+        }
+      });
+
+      if (currentLangText) {
+        currentLangText.textContent = idioma === 'en' ? 'Español' : 'English';
+      }
+      updateEvidenciaDesc();
+      if (activeProfile) {
+        updateProfileContent(activeProfile);
+      }
+    }
+
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // mostrar una de las 4 imágenes de "quiénes somos"
+    function mostrarimagen(num) {
+      for (let i = 1; i <= 4; i++) {
+        const img = document.getElementById(`img${i}`);
+        if (img) img.style.display = 'none';
+      }
+      const seleccionada = document.getElementById(`img${num}`);
+      if (seleccionada) seleccionada.style.display = 'block';
+    }
+
+    function toggleProfile(profileId) {
+      const profile = document.getElementById(profileId);
+      if (!profile) return;
+      const content = profile.querySelector('.profile-content');
+
+      document.querySelectorAll('.profile-content').forEach(c => {
+        if (c !== content) c.classList.remove('active');
+      });
+
+      content.classList.toggle('active');
+      activeProfile = content.classList.contains('active') ? profileId : null;
+      updateProfileContent(profileId);
+    }
+
+    function updateProfileContent(profileId) {
+      const content = document.getElementById(`${profileId}-content`);
+      if (!content) return;
+      const p = content.querySelector('p');
+      if (!p) return;
+      const texto = p.getAttribute(`data-${currentLanguage}`);
+      if (texto) p.textContent = texto;
+    }
+
+    function nextSlide() {
+      const imagenes = document.querySelectorAll('.evidencias .evidencia-item');
+      if (!imagenes.length) return;
+      slideIndex++;
+      if (slideIndex >= imagenes.length) {
+        slideIndex = 0;
+      }
+      const cont = document.querySelector('.evidencias');
+      const scrollPosition = imagenes[slideIndex].offsetLeft - cont.offsetLeft;
+      cont.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+      });
+      updateEvidenciaDesc();
+    }
+
+    function updateEvidenciaDesc() {
+      const imagenes = document.querySelectorAll('.evidencias .evidencia-item');
+      const descBox = document.querySelector('.evidencia-desc-box');
+      if (!imagenes.length || !descBox) return;
+
+      imagenes.forEach((item, index) => {
+        const img = item.querySelector('img');
+        if (img) img.classList.toggle('active', index === slideIndex);
+      });
+
+      const descTextElem = imagenes[slideIndex].querySelector('.evidencia-desc');
+      if (descTextElem) {
+        const texto = descTextElem.getAttribute(`data-${currentLanguage}`) || '';
+        descBox.textContent = texto;
+        descBox.classList.add('active');
+      }
+    }
+
+    function startCarousel() {
+      const cont = document.querySelector('.evidencias');
+      if (!cont) return;
+      let carouselInterval = setInterval(nextSlide, slideDuration);
+      cont.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+      cont.addEventListener('mouseleave', () => {
+        carouselInterval = setInterval(nextSlide, slideDuration);
+      });
+      updateEvidenciaDesc();
+    }
+
+    // cuando cargue la página
+    document.addEventListener('DOMContentLoaded', () => {
+      // que se vea la primera imagen de misión por defecto
+      mostrarimagen(1);
+
+      // activar clic en perfiles
+      document.querySelectorAll('.profile').forEach(profile => {
+        profile.addEventListener('click', () => {
+          toggleProfile(profile.id);
+        });
+      });
+
+      startCarousel();
+    });
+  </script>
+</body>
+</html>
